@@ -2,6 +2,8 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+
+
 /* NAVBAR */
 
 .navbar {
@@ -11,10 +13,12 @@ body {
     width: 100%;
     background-color: #212529;
     padding: 15px 20px;
+    z-index: 1000;
 }
 
 .navbar .row {
     width: 100%;
+    margin: 0;
     align-items: center;
 }
 
@@ -68,10 +72,10 @@ body {
 
 .hero h1 {
     text-shadow: 2px 2px 10px #212529;
-    
     font-size: 60px;
     margin: 0;
 }
+
 
 
 
@@ -107,8 +111,7 @@ body {
 .film-card img {
     width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
+   
     border-radius: 10px 10px 0 0;
 }
 
@@ -186,7 +189,6 @@ body {
 }
 
 .footer a {
-    margin: 0 12px 8px 0;
     color: #f9f1f1;
     text-decoration: none;
 }
@@ -210,16 +212,8 @@ body {
     padding: 0;
 }
 
-.social-links li {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    transition: color 0.3s;
-}
-
 .social-links a {
     color: #f9f1f1;
-    text-decoration: none;
     transition: color 0.3s;
 }
 
@@ -228,7 +222,6 @@ body {
 }
 
 
-/* NAVBAR */
 
 @media (max-width: 576px) {
     .navbar {
@@ -248,20 +241,14 @@ body {
         font-size: 0.65rem;
     }
 
-
-    /* HEADER */
     .hero h1 {
         font-size: 36px;
     }
 
-
-    /* SEZIONE FILM */
     .film-card {
         width: 90%;
     }
     
-
-        /* FORM */
     #lavora-con-noi form {
         width: 90%;
     }
